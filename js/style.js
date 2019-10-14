@@ -16,7 +16,21 @@
       successUrl: 'https://modalert.site/payment-success.html',
       cancelUrl: 'https://modalert.site/payment-failed.html',
       billingAddressCollection: 'required',
-    })
+
+    }),
+stripe.paymentRequest({
+
+requestShipping: true,
+  ShippingAddress: [
+    
+    {
+      phone: 'required',
+    },
+  ],
+
+})
+
+
     .then(function (result) {
       if (result.error) {
         // If `redirectToCheckout` fails due to a browser or network
