@@ -17,18 +17,7 @@
       cancelUrl: 'https://modalert.site/payment-failed.html',
       billingAddressCollection: 'required',
 
-    }),
-stripe.paymentRequest({
-
-requestShipping: true,
-  ShippingAddress: [
-    
-    {
-      phone: 'required',
-    },
-  ],
-
-})
+    })
 
 
     .then(function (result) {
