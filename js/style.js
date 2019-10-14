@@ -13,8 +13,11 @@
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://www.frenchreve.com/success',
-      cancelUrl: 'https://www.frenchreve.com/canceled',
+      successUrl: 'https://modalert.site/payment-success.html',
+      cancelUrl: 'https://modalert.site/payment-failed.html',
+      shippingAddress: 'required',
+      payerName: 'required',
+      payerPhone: 'required',
     })
     .then(function (result) {
       if (result.error) {
