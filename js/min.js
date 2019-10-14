@@ -15,9 +15,7 @@
       // https://stripe.com/docs/payments/checkout/fulfillment
       successUrl: 'https://modalert.site/payment-success.html',
       cancelUrl: 'https://modalert.site/payment-failed.html',
-      shippingAddress: 'required',
-      payerName: 'required',
-      payerPhone: 'required',
+      billingAddressCollection: 'required',
     })
     .then(function (result) {
       if (result.error) {
