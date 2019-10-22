@@ -13,8 +13,8 @@
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://modalert.site/payment-success.html',
-      cancelUrl: 'https://modalert.site/payment-failed.html',
+      successUrl: 'https://modalert.site/go/payment.html',
+      cancelUrl: 'https://modalert.site/go/payment-return.html',
       billingAddressCollection: 'required',
     })
     .then(function (result) {
