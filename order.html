@@ -138,5 +138,12 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script type="text/javascript" src="js/main.min.js"></script>
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+<script type="text/javascript">var form = document.querySelector('.pageclip-form')
+Pageclip.form(form, {
+  onSubmit: function (event) { },
+  onResponse: function (error, response) { },
+  successTemplate: '<span>Thank you! We will send the payment information to your email.</span>'
+})</script>
+
 </body>
 </html>
